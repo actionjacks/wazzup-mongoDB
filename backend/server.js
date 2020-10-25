@@ -17,7 +17,10 @@ const pusher = new Pusher({
 });
 
 //middleware
-//to jest potrzebne żeby dane odbierane byly w formacie json
+//===============================================
+//npm run build from frontend folder!! and copy build files to public
+// app.use(express.static("public"));
+//===============================================
 app.use(express.json());
 app.use(cors());
 
