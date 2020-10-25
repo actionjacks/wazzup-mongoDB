@@ -1,0 +1,46 @@
+201 - created
+200 - ok
+500 - bład
+
+npm init -y
+in packed json main:"server.js"
+in script "start":"node server.js"
+npm i express mongoose
+npm i cors
+
+npm i -g nodemon
+//create mongodb project db cluster
+package json 
+type after "main":"server.js", 
+               "type": "module",
+//dzieki type modules mozna kozystac z importow z paczek
+
+import cors from "cors";
+import express from "express";
+import mongoose from "mongoose";
+//tworzymy aplikacje express
+const app = express();
+const port = process.env.PORT || 9000
+
+//serwer po uruchomieniu daje ressponse
+app.get("/", (req, res) => res.status(200).send("server running"));
+
+//masluchiwanie 
+//listener
+app.listen(port, () => console.log(`listening on localhost:${port}`));
+
+//db config
+z mongo db connect aplication i tam nazwa admina i nazwa databse
+const connection_url = `mongodb+srv://jack:${"riprip"}@jaxoo.lcoew.mongodb.net/${"jacek_databse"}?retryWrites=true&w=majority
+`;
+dodatkowe parametry do polaczenia 
+mongoose.connect(connection_url, {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+https://pusher.com/ strona gdzie mozna odpalic react i backend
+
+dla frontend npm i pusher-js zeby wykozystac pushera
+npm i axios
