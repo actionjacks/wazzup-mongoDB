@@ -1,1 +1,1 @@
-# aplikacja do czatowania Real-time database przy użyciu pusher i MongoDB
+# Real-time database chatting application using pusher and MongoDB
